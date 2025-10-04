@@ -1,5 +1,5 @@
 # Ex. No: 8   Packet Tracer: Connect a Router to a LAN
-# Date: ___________
+# Date: __04.10.25_________
 ________________________________________<br>
 # Objective
 Configure and verify router LAN/WAN interfaces in Cisco Packet Tracer and test end-to-end connectivity.<br>
@@ -15,9 +15,12 @@ ________________________________________<br>
 •	Copper straight-through cables for LAN links; Serial DCE/DTE cable for WAN link <br>
 ________________________________________<br>
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot showing R1—S1—PC1/PC2 and R2—S2—PC3/PC4, plus R1–R2 Serial link S0/0/0.)<br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091955" src="https://github.com/user-attachments/assets/d5373689-2398-4699-967c-fbf7ee1adff4" />
+<br>
 ________________________________________<br>
 Addressing Table (from activity)<br>
+<img width="745" height="463" alt="Screenshot 2025-09-27 082417" src="https://github.com/user-attachments/assets/77bf6589-55e0-40c8-86f4-34f5e76ee602" />
+
 Device	Interface	IP Address	Subnet Mask	Default Gateway<br>
 R1	G0/0	192.168.10.1	255.255.255.0	—<br>
 R1	G0/1	192.168.11.1	255.255.255.0	—<br>
@@ -112,10 +115,21 @@ ________________________________________<br>
 ________________________________________<br>
 # Output (Attach Screenshots)
 •	show ip interface brief on R1 and R2 (after configuration)<br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091138" src="https://github.com/user-attachments/assets/d3086df4-6f7c-4506-85ad-b65f9929bcdf" />
+
 •	show ip route on R1 and R2<br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091138" src="https://github.com/user-attachments/assets/d1e8f83b-76da-45a8-a5de-33e880ce3a34" />
+
 •	Successful ping PC1 → PC4; R2 → PC2<br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091727" src="https://github.com/user-attachments/assets/ae4cbdf9-0c77-4ee7-82dc-d5a18dc442a4" /><br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091924" src="https://github.com/user-attachments/assets/141aebcc-4a85-49ae-9a77-acc94621f818" />
+
 •	Interface up messages after no shutdown on each link <br>
+<img width="1920" height="1080" alt="Screenshot 2025-09-27 091407" src="https://github.com/user-attachments/assets/61e2da40-b71f-4148-8370-f770e162e466" />
+
 ________________________________________<br>
 # Result
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/355372a3-7932-47fb-8128-b5e98c2af0e5" />
+
 R1 and R2 were configured with correct IPv4 addresses and interface descriptions, links were brought up, routing tables showed connected networks, and end-to-end connectivity between PCs across the WAN link was verified using pings. The configurations were saved to NVRAM for persistence.<br>
 
